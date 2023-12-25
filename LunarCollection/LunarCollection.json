@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "1bfb0247-f379-4526-99c1-878a85a24f11",
+		"name": "Countries",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sehhaty",
+			"item": [
+				{
+					"name": "individuals",
+					"item": [
+						{
+							"name": "v2",
+							"item": [
+								{
+									"name": "countries",
+									"item": [
+										{
+											"name": "https://api-sehhaty.qaclan.io/",
+											"id": "6c67cee9-a34f-4fde-a75a-4b9ab4392263",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": "{{baseUrl}}/sehhaty/individuals/v2/countries"
+											},
+											"response": [
+												{
+													"id": "8020d5f8-e877-41f5-a540-93a7a089b468",
+													"name": "OK",
+													"originalRequest": {
+														"method": "GET",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": "{{baseUrl}}/sehhaty/individuals/v2/countries"
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"responseTime": null,
+													"body": "{\n  \"statusCode\": \"<integer>\",\n  \"message\": \"<null>\",\n  \"data\": [\n    {\n      \"name\": \"<string>\",\n      \"code\": \"<string>\",\n      \"dailCode\": \"<string>\"\n    },\n    {\n      \"name\": \"<string>\",\n      \"code\": \"<string>\",\n      \"dailCode\": \"<string>\"\n    }\n  ]\n}"
+												}
+											]
+										}
+									],
+									"id": "f3039fc5-9410-4b6c-aae6-abc7a9315a1b"
+								}
+							],
+							"id": "f54a480e-f767-4e76-8bad-e5441e322c6f"
+						}
+					],
+					"id": "f230cbac-e3d2-44a2-8e2b-fde20bd5f68d"
+				}
+			],
+			"id": "c7940ed7-32a5-424a-b156-a874aecd4711"
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://sehhaty.devclan.io"
+		}
+	]
+}
